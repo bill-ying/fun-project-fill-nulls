@@ -44,6 +44,6 @@ data = {
 
 df = pd.DataFrame(data)
 
-df['score'] = df.groupby('name')['score'].ffill()
+df['test_score'] = df.groupby('tester')['test_score'].ffill()
 
 print(df)
